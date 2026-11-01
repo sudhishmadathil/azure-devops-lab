@@ -1,2 +1,2 @@
 ﻿# DevOps Lab
-End-to-end Azure DevOps learning project.
+Ver A text error
