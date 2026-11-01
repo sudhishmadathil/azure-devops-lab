@@ -1,2 +1,2 @@
 ﻿# DevOps Lab
-Version A text
+Ver A text error
