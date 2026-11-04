@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: devopslab-web
+  namespace: dev
+spec:
+  type: ClusterIP
+  selector:
+    app: devopslab-web
+  ports:
+    - port: 80
+      targetPort: 8080

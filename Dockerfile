@@ -19,6 +19,9 @@ COPY --from=build /app/publish .
 ENV ASPNETCORE_HTTP_PORTS=8080
 EXPOSE 8080
 
+ARG APP_VERSION=dev
+ENV App__Version=$APP_VERSION
+
 # Run as the non-root user that ships in .NET 8 images.
 USER $APP_UID
 

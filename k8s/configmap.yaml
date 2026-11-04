@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: devopslab-config
+  namespace: dev
+data:
+  App__Greeting: "Hello from ConfigMap!"

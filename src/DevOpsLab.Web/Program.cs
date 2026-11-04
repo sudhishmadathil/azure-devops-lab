@@ -28,5 +28,7 @@ app.MapRazorPages();
 
 app.MapGet("/health", () => Results.Ok(new { status = "Healthy" }));
 app.MapGet("/api/greeting", (IGreetingService svc) => svc.GetGreeting());
+app.MapGet("/api/whoami",(IConfiguration cfg) => 
+    Results.Ok(new { pod=Environment.MachineName, version=cfg["App:Version"] ?? "dev" }));
 
 app.Run();
